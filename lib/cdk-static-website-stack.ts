@@ -37,7 +37,7 @@ export class CdkStaticWebsiteStack extends cdk.Stack {
 
     // S3バケットへのデプロイ
     new s3deploy.BucketDeployment(this, 'DeployWebsite', {
-      sources: [s3deploy.Source.asset('./website')],
+      sources: [s3deploy.Source.asset('./website2')],
       destinationBucket: websiteBucket,
       distribution,
       distributionPaths: ['/*'],
